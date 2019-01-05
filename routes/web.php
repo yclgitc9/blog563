@@ -46,7 +46,7 @@ Route::post('/blog/{post}/comments', [
     'as' => 'blog.comments'
 ]);
 
-// Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::auth();
 
