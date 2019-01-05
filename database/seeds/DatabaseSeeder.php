@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             $this->call(PermissionsTableSeeder::class);
             $this->call(TagsTableSeeder::class);
             $this->call(CommentsTableSeeder::class);
+
+            $this->call(ProductsTableSeeder::class);
         }
         else
         {
@@ -28,5 +30,7 @@ class DatabaseSeeder extends Seeder
             $this->call(RolesTableSeeder::class);
             $this->call(PermissionsTableSeeder::class);
         }
+
+        
     }
 }

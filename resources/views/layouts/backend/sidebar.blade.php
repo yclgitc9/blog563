@@ -39,6 +39,9 @@
       @if (check_user_permissions(request(), "Users@index"))
         <li><a href="{{ route('backend.users.index') }}"><i class="fa fa-users"></i> <span>Users</span></a></li>
       @endif
+      
+      <li><a href="{{ route('backend.products.index') }}"><i class="fa fa-users"></i> <span>Products</span></a></li>
+      
     </ul>
   </section>
   <!-- /.sidebar -->

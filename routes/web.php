@@ -74,3 +74,5 @@ Route::get('/backend/users/confirm/{users}', [
 ]);
 Route::resource('/backend/users', 'Backend\UsersController', ['as' => 'backend']);
 
+Route::resource('/backend/products', 'Backend\ProductsController', ['as' => 'backend']);
+
