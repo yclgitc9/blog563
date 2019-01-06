@@ -10,10 +10,23 @@ class ProductsController extends BackendController
 {
     public function index()
     {
-        $products      = Product::orderBy('name')->paginate($this->limit);
+        $products      = Product::orderBy('created_at', 'esc')->paginate($this->limit);
         $productCount = Product::count();
 
         return view("backend.products.index", compact('products', 'productCount'));
+    }
+
+    public function create()
+    {
+        $product = new Product();
+        return view("backend.products.create", compact('product'));
+    }
+
+    public function store(Requests\ProductStoreRequest $request)
+    {
+        Product::create($request->all());
+
+        return redirect("/backend/products")->with("message", "New product was created successfully!");
     }
 
     public function edit($id)

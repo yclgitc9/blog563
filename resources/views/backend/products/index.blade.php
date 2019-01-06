@@ -27,7 +27,7 @@
               <div class="box">
                 <div class="box-header clearfix">
                     <div class="pull-left">
-                        <a href="{{ route('backend.blog.create') }}" class="btn btn-success"><i class="fa fa-plus"></i> Add New</a>
+                        <a href="{{ route('backend.products.create') }}" class="btn btn-success"><i class="fa fa-plus"></i> Add New</a>
                     </div>
                     
                 </div>

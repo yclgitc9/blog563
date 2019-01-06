@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyBlog | My Awesome Blog</title>
+    <title>Internship</title>
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
@@ -21,15 +21,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">MyBlog</a>
+              <a class="navbar-brand" href="#">Internship</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="the-navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="{{ route('blog') }}">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="{{ route('blog') }}">News</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Employees</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="{{ route('login') }}">Login</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container -->
@@ -42,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="copyright">&copy; 2016 Edo Masaru</p>
+                    <p class="copyright">&copy; 2019 Internship</p>
                 </div>
                 <div class="col-md-4">
                     <nav>
